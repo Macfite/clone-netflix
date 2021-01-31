@@ -1,0 +1,128 @@
+:root {
+  font-size: 60%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: #1f1f1f;
+  font-family: 'Open sans',sans-serif;
+}
+
+header .container-menu {
+  background-color: #1f1f1f;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .container-menu .logo {
+  width: 100px;
+  margin-right: 40px;
+  margin-left: 50px;
+}
+
+header .container-menu nav :not(:first-child) {
+  margin-left: 2.2rem;
+}
+
+header .container-menu nav a {
+  text-decoration: none;
+  color: #aaa;
+  font-size: 1.5rem;
+}
+
+header .container-menu nav a:hover {
+  color: #fff;
+}
+
+.main-movie {
+  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0))), url("/src/main-background.jpg");
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%), url("/src/main-background.jpg");
+  background-size: cover;
+  height: 60vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.main-movie .container {
+  margin-left: 50px;
+  color: #fff;
+}
+
+.main-movie .container .movie-title {
+  height: 75px;
+  margin-top: 10%;
+}
+
+.main-movie .container .movie_descipton {
+  width: 40%;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  font-size: 1.5rem;
+  line-height: 2.1rem;
+}
+
+.main-movie .buttons :not(:first-child) {
+  margin-left: 10px;
+}
+
+.main-movie .buttons .button {
+  border-radius: 3px;
+  padding: 15px;
+  font-weight: bold;
+  background: rgba(77, 77, 77, 0.8);
+  color: #fff;
+  border: 0;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.main-movie .buttons .button i {
+  margin-right: 8px;
+}
+
+.main-movie .buttons .button:hover {
+  color: #000;
+  background: #fff;
+  cursor: pointer;
+}
+
+.main-movie .buttons :first-child:hover {
+  color: #fff;
+  background: #e50914;
+  cursor: pointer;
+}
+
+.carousel h2 {
+  font-weight: 500;
+  color: #fff;
+  margin: 30px 50px 5px;
+  font-size: 2.3rem;
+}
+
+.carousel .box-film {
+  height: 100%;
+  margin-left: 50px;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,129 @@
+$primary-color: #e50914;
+$dark-color: #1f1f1f;
+$light-color: #aaa;
+$select-color: #fff;
+
+:root{
+    font-size: 60%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: $dark-color;
+    font-family: 'Open sans',sans-serif;
+}
+
+header{
+
+    .container-menu {
+        background-color: $dark-color;
+        color: #fff;
+        display: flex;
+        align-items: center;
+    
+        .logo {
+            width: 100px;
+            margin-right: 40px;
+            margin-left: 50px;
+        }
+    
+        nav {
+            :not(:first-child) {
+                margin-left: 2.2rem;
+            }
+    
+            a {
+                text-decoration: none;
+                color: $light-color;
+                font-size: 1.5rem;
+            }
+    
+            a:hover {
+                color: $select-color;
+            }
+        }
+    }
+}
+
+.main-movie {
+
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%), url("/src/main-background.jpg");
+    background-size: cover;
+    height: 60vh;
+
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    .container {
+
+        margin-left: 50px;
+        color: $select-color;
+        .movie-title{
+            height: 75px;
+            margin-top: 10%;
+        }
+    
+        .movie_descipton {
+            width: 40%;
+            margin-top: 10px;
+            margin-bottom: 30px;
+            font-size: 1.5rem;
+            line-height: 2.1rem;
+        }
+    }
+
+    .buttons {
+
+        :not(:first-child) {
+            margin-left: 10px;
+        }
+
+        .button {
+            border-radius: 3px;
+            padding: 15px;
+            font-weight: bold;
+            background: rgba(77, 77, 77, .8);
+            color: $select-color;
+            border: 0;
+
+            transition: .2s;
+
+            i {
+                margin-right: 8px;
+            }
+        }
+
+        .button:hover {
+            color: #000;
+            background: $select-color;
+            cursor: pointer;
+        }
+        :first-child:hover {
+            color: $select-color;
+            background: $primary-color;
+            cursor: pointer;
+        }
+    }
+}
+
+.carousel {
+    
+    h2 {
+        font-weight: 500;
+        color: $select-color;
+        margin: 30px 50px 5px;
+        font-size: 2.3rem;
+    }
+    .box-film {
+        height: 100%;
+        margin-left: 50px;
+    }
+}
